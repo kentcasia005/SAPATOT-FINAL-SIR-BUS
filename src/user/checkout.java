@@ -935,7 +935,7 @@ public class checkout extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, orderSummary.toString());
         
         // Save all cart items to database for admin to see in saleslogs
-        try (Connection con = DriverManager.getConnection("jdbc:sqlite:C:/Users/PC-001/Videos/Sapatot/sapatotDB.db")) {
+        try (Connection con = DriverManager.getConnection("jdbc:sqlite:sapatotDB.db")) {
             
             // Debug: Check user ID
             System.out.println("DEBUG: Checkout user ID = " + this.id);
